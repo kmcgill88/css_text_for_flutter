@@ -43,7 +43,6 @@ class Parser {
   TextSpan _getTextSpan(text, style) {
     var rules = style.split(";").where((item) => !item.trim().isEmpty);
     TextStyle textStyle = DefaultTextStyle.of(_context).style;
-    textStyle = textStyle.apply(color: Color(0xff000000));
     var isLink = false;
     var link = "";
     rules.forEach((String rule) {
